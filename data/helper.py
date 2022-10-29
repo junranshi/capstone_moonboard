@@ -34,16 +34,16 @@ def get_coor(hold):
     y_coor = 958 - y*51
     return (int(x_coor), int(y_coor))
 
-circle_color = {
-    'start': (0,255,0),
-    'mid': (255,0,0),
-    'end': (0,0,255),
-}
 
 def add_hold(hold, img, hold_type):
     """
     add hold to moonboard image
     """
+    circle_color = {
+        'start': (0,255,0),
+        'mid': (255,0,0),
+        'end': (0,0,255),
+    }
     center = get_coor(hold)
     c = circle_color[hold_type]
     cv2.circle(img = img, center = center, radius = 28, color = c, thickness=5)
