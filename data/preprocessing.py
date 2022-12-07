@@ -24,9 +24,9 @@ def get_grade_map():
         '7B+': 4, # V8
         '7C': 5,  # V9
         '7C+': 6, # V10
-        '8A': 7,  # V11
-        '8A+': 8, # V12
-        '8B': 9,  # V13
+        '8A': 6,  # V11
+        '8A+': 6, # V12
+        '8B': 6,  # V13
     }
     return grade_map
 grade_map = get_grade_map()
