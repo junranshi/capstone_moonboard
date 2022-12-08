@@ -53,6 +53,3 @@ for key in legal_routes:
         if mb_2016[key][f] != None:
             mb_2016[key][f] = grade_map[mb_2016[key][f]]
 print('Number of routes after cleaning:', len(mb_2016))
-
-# draw 5k samples
-samples_5k = draw_samples(mb_2016, 5000)
