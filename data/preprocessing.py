@@ -6,7 +6,7 @@ from helper import *
 
 cwd = os.getcwd() # /preprocessing
 # parent_wd = cwd.replace('/preprocessing', '')
-main_wd = '/Users/junran/Desktop/capstone_moonboard'
+main_wd = '/content/capstone_moonboard'
 raw_data_path = main_wd + '/raw_data/moonGen_scrape_2016_final'
 
 def get_grade_map():
