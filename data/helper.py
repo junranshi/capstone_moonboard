@@ -126,3 +126,4 @@ def heat_matrix(data, grades_list):
             d[key] = item
     matrix_list = get_matrices(d, ['mid'])[1]
     return sum(matrix_list)/len(matrix_list)
+
