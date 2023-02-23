@@ -1,0 +1,152 @@
+.background-image {
+    width: 588px;
+    height: 906px;
+    background-image: url(/moon/img/mb.png);
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    padding-top: 61px;
+    margin-left: 68px;
+    margin-right: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(18, 50px);
+}
+
+.grid-container img {
+    position: relative;
+    margin-top: -20px;
+    left: -20px;
+}
+
+
+#moonboard-logo {
+  width: 300px;
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
+  width: 50%;
+}
+
+#all-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+#options-container {
+    /* display: grid;
+    grid-template-columns: repeat(2, auto); */
+    width: 100%;
+}
+
+div.option {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 0px 50px 20px 50px;
+}
+
+
+div.grade-display {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#prediction {
+  font-weight: 450;
+  text-transform: uppercase;
+}
+
+#grade-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 100%;
+}
+
+#grade-container span {
+  text-align: center;
+}
+
+.button-container {
+    width: 650px;
+    display: grid;
+    margin-bottom: 20px;
+}
+
+body {
+    max-width: 650px;
+    background-color: #EEEEEE;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #444;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0px 5px 0px;
+    font-size: 30px
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align:center;
+  text-transform: uppercase;
+  margin: 5px 0px 5px 0px;
+  width:100%;
+}
+
+b {
+  text-transform: uppercase;
+}
+
+input {
+  cursor: pointer;
+}
+
+
+input[type=button] {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  text-transform: uppercase;
+  color: #333333;
+  border-color: #333333;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: fit-content;
+  border-radius: 0.35rem;
+  margin: auto;
+} 
+
+
+input[type=button]:hover {
+  background: #333333;
+  font-weight: 600;
+  color:  #EEEEEE;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: #000;
+}

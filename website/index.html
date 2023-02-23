@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>MoonBoard Route Generator</title>
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico">
+    <link rel="stylesheet" href="moon/css/layout.css">
+    <meta name="description" content="Generate and classify new climbs for the 2016 MoonBoard using Artificial Intelligence.">
+    <meta name="keywords" content="MoonBoard, Generate, Rock climbing, AI, Machine Learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Junran Shi">
+  </head>
+  <body>
+    <div class="header">
+      <img id="moonboard-logo" src = "moon/img/MoonBoard-Logo.png"><img>
+      <h1>Route Generator</h1>
+    </div>
+
+    <h2>Desired Grade</h2>
+    <div id="options-container">
+      <div class="option">
+        <label><input type="radio" name="grade" value="0" onclick="random_climb()" checked><span>V4</span></label>
+        <label><input type="radio" name="grade" value="1" onclick="random_climb()" checked><span>V5</span></label>
+        <label><input type="radio" name="grade" value="2" onclick="random_climb()" checked><span>V6</span></label>
+        <label><input type="radio" name="grade" value="3" onclick="random_climb()" checked><span>V7</span></label>
+        <label><input type="radio" name="grade" value="4" onclick="random_climb()" checked><span>V8</span></label>
+        <label><input type="radio" name="grade" value="5" onclick="random_climb()" checked><span>V9</span></label>
+        <label><input type="radio" name="grade" value="6" onclick="random_climb()" checked><span>V10+</span></label>
+        <label><input type="radio" name="grade" value="random" onclick="random_climb()" checked><span>Random</span></label>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <input type="button" class="red" value="GENERATE" onclick="random_climb()">
+    </div>
+
+    <h2>Grade Classifier</h2>
+    <div id="grade-container">
+      <div class="grade-display">
+        <span id="prediction">Logistic Regression: &nbsp</span>
+        <span class="grade" id="logistic"></span>
+      </div>
+      <div class="grade-display">
+        <span id="prediction">XGBoost: &nbsp</span>
+        <span class="grade" id="xgboost"></span>
+      </div>
+    </div>
+    <div class="background-image" title="MoonBoard Wall">
+      <div class="grid-container" id="moon-board">
+      </div>
+    </div>
+    
+    <footer>
+      <script type="text/javascript" src="moon/climbs/generated_climbs.js"></script>
+      <script type="text/javascript" src="moon/js/load_board.js"></script>
+      <a href="https://github.com/junranshi/capstone_moonboard">GitHub Project<a/> by Junran Shi.<br>
+      The scheme of this website is modified from <a href="https://github.com/andrew-houghton/moon-board-climbing">the GitHub project by Andrew Houghton, Jemma Herbert and Ryan Mann<a/>. 
+    </footer>
+  </body>
+</html>
