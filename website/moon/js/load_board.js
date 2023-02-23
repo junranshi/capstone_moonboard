@@ -9,7 +9,7 @@ function random_climb() {
     var index = Math.floor(Math.random() * 19) + grade * 19;
     // load route image
     var background = document.querySelector('[title="MoonBoard Wall"]');
-    background.style.backgroundImage = "url(/moon/img/routes/"+String(grade)+"/"+String(index)+".jpeg)";
+    background.style.backgroundImage = "url(../img/routes/"+String(grade)+"/"+String(index)+".jpeg)";
     // find and display classified grade
     display_grades(index);
 }
